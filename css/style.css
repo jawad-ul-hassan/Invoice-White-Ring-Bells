@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.35;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.wrapper {
+  max-width: 100%;
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+}
+
+/* Left---Side */
+
+.left-side {
+  width: 30%;
+  position: relative;
+}
+
+.brand-content {
+  background: #8e365d;
+  text-align: center;
+  padding: 8rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+}
+
+.brand-content > img {
+  display: block;
+  width: 5rem;
+  height: 6rem;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.brand-name h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.brand-name p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  color: #fff;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.invoice-customer-content {
+  background: #eae8e3;
+  padding: 12rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 45rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.bill-from,
+.payment-methods,
+.tos {
+  width: 25.5rem;
+  margin: 0 auto;
+}
+
+.bill-from,
+.payment-methods {
+  margin-bottom: 2rem;
+}
+
+.bill-from h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e365d;
+  margin-bottom: 1rem;
+}
+
+.bill-from h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+.bill-from p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 400;
+}
+
+.small-line {
+  width: 8rem;
+  height: 5px;
+  margin: 2.5rem 0;
+  margin-bottom: 0.5rem;
+  background: #8e365d;
+}
+
+.payment-methods h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e365d;
+  margin-bottom: 1rem;
+}
+
+.payment-methods h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: 0.5rem;
+}
+
+.payment-methods p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 400;
+}
+
+.paypal {
+  margin-top: 1rem;
+}
+
+.tos h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e365d;
+  margin-bottom: 1rem;
+}
+
+.tos p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 400;
+}
+
+.bg-image-top > img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 8rem;
+  left: 22rem;
+  z-index: -1;
+}
+
+/* Rigth Side */
+
+.right-side {
+  flex: 1;
+  padding: 0 5%;
+}
+
+.invoice-box {
+  width: 33rem;
+  margin-left: auto;
+  padding: 5rem 1.5rem;
+  background: #eae7e0;
+  text-align: center;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.invoice-box h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #8e365d;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+.invoice-box p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #8e365d;
+  font-size: 2rem;
+}
+
+.invoice-issue {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoice-to {
+  width: 20rem;
+}
+
+.invoice-to h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e365d;
+  margin-bottom: 0.8rem;
+}
+
+.invoice-to h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.invoice-to p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 400;
+}
+
+.invoice-start {
+  margin-bottom: 2.5rem;
+}
+
+.invoice-start h3,
+.invoice-end h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e365d;
+  text-align: right;
+}
+
+.invoice-start p,
+.invoice-end p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 400;
+}
+
+.invoice-table {
+  margin-top: 6.5rem;
+}
+
+.invoice-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.invoice-table table th {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8e365d;
+  padding: 2rem;
+  border-top: 2px solid #8e365d;
+  border-bottom: 2px solid #8e365d;
+  text-align: center;
+}
+
+.invoice-table table th:nth-child(1) {
+  text-align: left;
+  width: 45%;
+}
+
+.invoice-table table th:nth-child(4) {
+  text-align: right;
+}
+
+.invoice-table table td {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #343434;
+  padding: 2rem 1.5rem;
+  border-bottom: 2px solid #eae7e0;
+  text-align: center;
+  vertical-align: top;
+}
+
+.invoice-table table td p {
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #a8a7a7;
+}
+
+.invoice-table table td:nth-child(1) {
+  text-align: left;
+  width: 45%;
+}
+
+.invoice-table table td:nth-child(4) {
+  text-align: right;
+}
+
+/* Bottom---Section */
+.bottom-section {
+  margin-top: 2.5rem;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-content {
+  align-self: flex-end;
+  margin-bottom: 5rem;
+}
+
+.contact-content .small-line {
+  margin: 0;
+  margin-bottom: 2.5rem;
+}
+
+.contact-description {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #8e365d;
+}
+
+.contact-detail {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #343434;
+}
+
+.total-bill-content {
+  width: 35%;
+  position: relative;
+}
+
+.bill-sub,
+.bill-taxes,
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.bill-total {
+  background: #8e365d;
+  color: #fff;
+  padding: 1.8rem;
+  border-radius: 1.8rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.signature {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signature > img {
+  display: block;
+  width: 15rem;
+  height: 18rem;
+}
+
+.signature-person {
+  padding-top: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.signature-person-designation {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #a8a7a7;
+}
+
+.bg-image-bottom > img {
+  display: block;
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/*----------Media Queries---------*/
+
+@media (min-width: 1280px) {
+  .left-side {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .left-side {
+    width: 35%;
+  }
+
+  .right-side {
+    padding: 0 2.5%;
+  }
+
+  .bottom-section {
+    padding: 0 2.5%;
+  }
+
+  .total-bill-content {
+    width: 45%;
+  }
+
+  .bg-image-bottom > img {
+    width: 35%;
+  }
+
+  .bg-image-top > img {
+    left: 15rem;
+  }
+}
+
+@media (max-width: 825px) {
+  .left-side {
+    width: 45%;
+  }
+
+  .bg-image-top > img {
+    left: 12rem;
+  }
+}
