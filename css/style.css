@@ -419,6 +419,19 @@ a {
   z-index: -1;
 }
 
+.footer {
+  margin-top: 5rem;
+  padding: 2.5rem 5%;
+}
+
+.footer-text {
+  border-top: 2.5px solid #8e365d;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 500;
+}
+
 /*----------Media Queries---------*/
 
 @media (min-width: 1280px) {
