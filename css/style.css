@@ -220,7 +220,6 @@ a {
 .invoice-issue {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .invoice-to {
@@ -247,7 +246,7 @@ a {
 }
 
 .invoice-start {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .invoice-start h3,
